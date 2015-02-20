@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@android:color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:id="@+id/Pantalla"
+        android:gravity="fill_vertical|end|right"
+        android:textSize="30dp"
+        android:textColor="#ffffffff" />
+
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:id="@+id/DelRes"
+                android:layout_weight="2"
+                android:onClick="BorrarDos"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="CE"
+                android:id="@+id/DelPan"
+                android:layout_weight="1"
+                android:onClick="BorrarUno"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="/"
+                android:tag="/"
+                android:id="@+id/Div"
+                android:layout_weight="1"
+                android:onClick="Operacion"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:tag="7"
+                android:text="7"
+                android:onClick="Mostrar"
+                android:id="@+id/Siete"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:tag="8"
+                android:id="@+id/Ocho"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:tag="9"
+                android:id="@+id/Nueve"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="*"
+                android:tag="*"
+                android:id="@+id/Mult"
+                android:layout_weight="1"
+                android:onClick="Operacion"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:tag="4"
+                android:id="@+id/Cuatro"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:tag="5"
+                android:id="@+id/Cinco"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:tag="6"
+                android:id="@+id/Seis"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:tag="-"
+                android:id="@+id/Resta"
+                android:layout_weight="1"
+                android:onClick="Operacion"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:tag="1"
+                android:id="@+id/Uno"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:tag="2"
+                android:id="@+id/Dos"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:tag="3"
+                android:id="@+id/Tres"
+                android:onClick="Mostrar"
+                android:layout_weight="1"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:tag="+"
+                android:id="@+id/Suma"
+                android:layout_weight="1"
+                android:onClick="Operacion"
+                android:textSize="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:id="@+id/Cero"
+                android:layout_weight="2"
+                android:tag="0"
+                android:onClick="Mostrar"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="."
+                android:id="@+id/Coma"
+                android:tag="."
+                android:layout_weight="1"
+                android:onClick="Mostrar"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="="
+                android:id="@+id/Igual"
+                android:layout_weight="1"
+                android:onClick="Igual"
+                android:textSize="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
